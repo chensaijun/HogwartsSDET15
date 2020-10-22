@@ -43,15 +43,21 @@ class TestCALC:
     #     result = self.calc.add(400, 50)
     #     assert result == 450
 
-    def test_sub(self):
+    @pytest.mark.parametrize('a,b,expect', [
+        [2, 1, 1], [100, 0, 100], [0, '-100', -100]
+    ])
+    def test_sub(self, a, b, expect):
         # calc1 = Calculator()
-        result = self.calc.sub(2, 1)
-        assert result == 1
+        result = self.calc.sub(a, b)
+        assert result == expect
 
-    def test_mul(self):
+    @pytest.mark.parametrize('a,b,expect', [
+        [2, 2, 4], [100, 100, 10000], [0, 10, 0], [5, 0, 0]
+    ])
+    def test_mul(self, a, b, expect):
         # calc2 = Calculator()
-        result = self.calc.mul(4, 4)
-        assert result == 16
+        result = self.calc.mul(a, b)
+        assert result == expect
 
     @pytest.mark.parametrize('a, b, expect', [
         [9, 3, 3], [-100, 10, -10], [1, 2, 0.5], [0, 9, 0]
