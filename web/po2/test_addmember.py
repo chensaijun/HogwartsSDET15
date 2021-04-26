@@ -1,7 +1,6 @@
 #! /usr/bin/python 3
 # -*- coding:UTF8 -*-
-from homework.po2.base import Base
-from homework.po2.main_page import MainPage
+from web.po2.main_page import MainPage
 
 
 class TestAddMember:

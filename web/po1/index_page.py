@@ -4,7 +4,7 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
-from homework.po1.importmenber_page import  ImportMenberPage
+from web.po1.importmenber_page import ImportMenberPage
 
 
 class IndexPage:

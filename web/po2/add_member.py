@@ -3,7 +3,7 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webdriver import WebDriver
 
-from homework.po2.base import Base
+from web.po2.base import Base
 
 
 class AddMemberPage(Base):

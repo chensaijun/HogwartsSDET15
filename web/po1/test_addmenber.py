@@ -1,6 +1,6 @@
 #! /usr/bin/python 3
 # -*- coding:UTF8 -*-
-from homework.po1.index_page import IndexPage
+from web.po1.index_page import IndexPage
 
 
 class TestAddMenber:

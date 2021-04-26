@@ -16,8 +16,8 @@ from selenium.webdriver.remote.webelement import WebElement
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 
-from homework.po2.add_member import AddMemberPage
-from homework.po2.base import Base
+from web.po2.add_member import AddMemberPage
+from web.po2.base import Base
 
 
 class MainPage(Base):
