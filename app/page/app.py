@@ -18,7 +18,9 @@ class App:
                 "skipDeviceInitialization": True,
                 "unicodeKeyBoard": True,
                 "resetKeyBoard": True,
-                'skipServerInstallation': 'true'
+                'skipServerInstallation': 'true',
+                # sdk自带，通过android stuio创建的模拟器，自动启动模拟器
+                # 'avd':'模拟器名称'
             }
             self.driver = webdriver.Remote("http://127.0.0.1:4723/wd/hub", disired_caps)
             self.driver.implicitly_wait(10)
